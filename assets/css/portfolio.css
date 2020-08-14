@@ -53,26 +53,42 @@
 }
 
 
-.skills__icons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.skills__icons div {
+ /* ---- TECNOLOGIAS ----  */
+ .skills {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;
+   padding-bottom: 2em;
+ }
+ 
+.skill {
   display: flex;
   align-items: flex-end;
 }
 
-.skills__icons i {
-  font-size: 2.5rem;
+.skill i {
+  font-size: 3rem;
 }
 
-.skills__icons span {
-  font-size: 75%;
-  margin: 0 10px 0 5px;
+.skill span {
+  font-size: 1rem;
+  margin-left: 5px;
 }
 
-.skills__icons .fab {
+.celular {
+  display: none;
+}
+
+@media screen and (max-width: 738px) {
+  .celular {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
 
 }
