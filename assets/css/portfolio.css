@@ -149,6 +149,10 @@
       grid-template-columns: 1fr 1fr;
   }
 
+  .skill span {
+    margin-left: 0;
+}
+
   .exp-h3 {
     border-bottom: 2px solid #953d75;
 
