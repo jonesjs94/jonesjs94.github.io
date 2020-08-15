@@ -1,3 +1,8 @@
+/* PRESENTACION */
+.presentacion span {
+  color: rgba(255, 255, 255, 0.55);
+}
+
 /* PROYECTOS */
 .titulo {
   margin-bottom: 0;
@@ -47,15 +52,33 @@
   color: #59aa4d;
 }
 
-
-.experiencia p {
-  font-size: 75%;
+.nota {
+ padding: 1rem;
+ background-color: #b74e91;
 }
 
+.nota p {
+  margin: 0;
+}
+
+ /* ---- EXPERIENCIA ----  */
+ .exp-h3 {
+   margin-bottom: 1rem;
+}
+
+.exp-div h3 {
+  font-size: 1em;
+  margin-bottom: 0 !important;
+}
+
+.exp-div p {
+  margin-bottom: 1rem !important;
+}
 
  /* ---- TECNOLOGIAS ----  */
  .skills {
    display: grid;
+   width: 80%;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 10px;
    padding-bottom: 2em;
@@ -79,16 +102,98 @@
   display: none;
 }
 
+.section-contacto {
+  width: 100% !important;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacto li {
+  list-style: none;
+  padding-top: 0;
+}
+
+
+
+.social li {
+  font-size: 2rem;
+}
+
+
 @media screen and (max-width: 738px) {
-  .celular {
+  #intro {
+    height: 100vh;
+  }
+  
+  .presentacion {
+    text-align: center;
+  }
+  
+  .presentacion span {
     display: block;
   }
 
-}
-
-@media screen and (max-width: 600px) {
+  .presentacion_texto {
+    text-align: center;
+  }
+  
+  .celular {
+    display: block;
+  }
+  
   .skills {
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+      grid-template-columns: 1fr 1fr;
   }
 
+  .exp-h3 {
+    border-bottom: 2px solid #953d75;
+
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contacto li {
+    list-style: none;
+    padding-top: 1rem;
+  }
+  
+  .contenedor-icono {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .contenedor-icono li {
+    padding: 0 !important;
+    margin: 0 !important ;
+
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .exp-h3 {
+    position: absolute;
+    top: 2.5rem;
+    left: 5rem;
+  }
+
+  .contenedor-icono {
+    grid-template-columns: 1fr 1fr;
+  }
 }
